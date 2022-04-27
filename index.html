@@ -1,16 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="prefer-sfc">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhayzon</title>
     <link rel="fluid-icon" type="image/png" href="/fluid-icon.png" /> 
+    fav
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+        :root{
+            --color:rgb(31, 31, 31);
+            --body-bg:rgb(237, 237, 237); 
+        }
+        .dark {
+            --body-bg: rgb(47, 47, 49);
+            --color:rgb(245, 240, 240);
+        }
+        html.dark {
+            color-scheme: dark;
+        }
+        body{
+            background-color: var(--body-bg);
+            font-family: 'Ubuntu', sans-serif;
+            color: var(--color);
+            text-rendering: optimizeLegibility;
+            transition: color .5s,background-color .5s;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            
+        }
+        h1{
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        a{
+          text-decoration: none;
+        }
+        img {
+            width: 50px;
+            vertical-align: middle;
+            background: #1c78c0;
+            height: 50px;
+        }
+        a.telegram {
+            background: var(--color);
+            border-radius: 1rem;
+            padding: 5px;
+            box-shadow: 3px 2px 6px 0px var(--body-bg);
+            font-size: .9rem;
+            display: inline-block;
+            color: var(--body-bg);
+        }
+        svg{
+            fill: #2481cc;
+            vertical-align: middle;
+            margin-right: .2rem;
+        }
+        code {
+        display: block;
+        white-space: pre-wrap   
+        }
+        .text-center{
+            text-align: center;
+        }
+        .container{
+            width:60%;
+            padding:0  2rem;
+            margin: 0 auto;
+        }
+        .content{
+            margin:4rem 0 ;
+        }
+         @media (max-width: 776px){
+            .container{
+                width: 98%;
+            }
+            h1{
+                font-size: 2rem;
+            }
+         }
+         *, *::before, *::after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FWHRM2778"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8FWHRM2778');
+    </script>
+    <script>
+
+    function toggleColor(ele){
+        let theme = document.getElementsByClassName("prefer-sfc");
+        theme[0].classList.toggle("dark");
+    }
+    </script>
     
 </head>
-<body>
+<body id="dsd">
     <header>
-        
+        <div class="container" >
+            <div class="text-center">
+                <h1>DHAYZON</h1> 
+                <p> MODS Y TEMAS PARA SMF</p> 
+                <p></p>
+            </div> 
+        </div>
     </header>
+    <section>
+        <div class="container">
+               <div class="content">
+                   <h2>
+                       Tema para SMF 2.1.x - Spirate  <button onclick="toggleColor(this)">☀️</button>
+                   </h2>
+                   Descargar el Tema : <a href="https://github.com/dhayzon/Spirate">Spirate</a><br>
+                   Foro de Prueba : <a href="http://pokeheart.com/">pokeheart</a>
+                    <code>
+    username:demo
+    password:1234
+                   </code>
+                   <p>para construir este tema se esta usando las siguientes herramientas</p>
+                   <div>
+                    <img alt="Bootstrap" src="/logo-bootstrap.svg" class="img-fluid rounded shadow-lg" />
+                    <img alt="Bootstrap" src="/logo-sass.svg" class="img-fluid rounded shadow-lg" />
+                    <img alt="Bootstrap" src="/logo-npm.svg" class="img-fluid rounded shadow-lg" />
+                    <img alt="Bootstrap" src="/icon.svg" class="img-fluid rounded shadow-lg" /> 
+                   </div>
+               </div>
+               <div class="content">
+                <h2>Descargas generales</h2>
+                Descarga la ultima versión De SMF: <a href="https://download.simplemachines.org/" target="_blank" rel="noopener noreferrer">https://download.simplemachines.org/</a><br>
+                Mis últimos Mods & Themes: <a href="https://custom.simplemachines.org/index.php?action=profile;u=348457" target="_blank" rel="noopener noreferrer">Customization Site</a> <br>
+                Soporte para SMF en Español. <a href="https://www.simplemachines.org/community/index.php?board=16.0" target="_blank" rel="noopener noreferrer">Español (Spanish)</a>  
+               </div>
+               
+        </div>        
+      </section>
+    
+    <footer>
+        <div class="container">
+            <div class="content">
+                <h2>Ponte en contacto conmigo</h2>
+                <p>puedes mandarme un mensaje privado o mencionarme en twitter  <a href="https://twitter.com/dhayzon"  target="_blank" >@dhayzon</a></p> 
+                <p>
+                pudes seguirme en github <a href="https://github.com/Dhayzon" target="_blank" rel="noopener noreferrer">@dhayzon</a> <br>o si deseas a través del foro oficial de 
+                <a href="https://www.simplemachines.org/community/index.php?action=pm;sa=send;u=348457" target="_blank" rel="noopener noreferrer">📭 simplemachines</a></p>
+                
+                <a class="telegram" href="https://t.me/dhayzon" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                  </svg>Telegram</a>
+            </div>
+            <div class="text-center content">
+                <div>
+                    <small>🧡dhayzon 2021</small>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
 </body>
 </html>
